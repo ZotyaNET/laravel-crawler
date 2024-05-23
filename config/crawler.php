@@ -34,7 +34,7 @@ return [
         'days' => 14,
     ],
 
-    'guzzle' => [
+    'guzzle' => [ // Guzzle http client
         // https://docs.guzzlephp.org/en/stable/request-options.html
         'options' => [
             'debug' => false, // fopen(storage_path("logs/crawler-guzzle-{$suffix}.log"), 'a+')
@@ -49,7 +49,7 @@ return [
         ],
     ],
 
-    'chrome' => [
+    'chrome' => [ // Chrome driver
         'server' => [
             'url' => 'http://chrome',
             'port' => 4444,
@@ -64,6 +64,25 @@ return [
             'level' => 'INFO', // set log level: ALL, DEBUG, INFO, WARNING, SEVERE, OFF
         ],
     ],
+    'php' => [ // Php curl
+        'path' => base_path('crawler/php/url.php'),
+    ],
+    'curl' => [ // Shell curl
+        'path' => '/usr/bin/curl',
+        'parallel' => 5,
+    ],
+    'stealth' => [ // Puppeteer stealth
+        'path' => base_path('crawler/stealth/stealth.cjs'),
+        'generic' => [
+            'generic/url.cjs',
+//            'generic/list.cjs',
+//            'generic/item.cjs',
+//            'generic/form.cjs',
+        ],
+        'website' => [
+            'autoscout24' => [
+                'search' => 'website/autoscout24-simple-search.cjs',
+            ],
 
     'stealth' => [],
 
@@ -71,6 +90,28 @@ return [
 
     'curl' => [],
 
+        ],
+    ],
+    'scrapy' => [ // Python scrapy
+        'path' => base_path('crawler/scrapy/scrapy'),
+        'spiders' => [
+            'url.py',
+            'adac.py',
+            'hahu.py',
+//            'as24.py',
+//            'mobile.py',
+//            'joautok.py',
+//            'jofogas.py',
+//            'kocsihu.py',
+        ],
+    ],
+    'cli' => [ // Documentation
+        'path' => base_path('crawler/cli/url.md'),
+    ],
+    'web' => [ // Php curl
+        'https://hasznaltauto.info.hu/?url=',
+        'https://winstonsmith.xyz?url=',
+    ],
     'rss' => [
         [
             'alias' => 'channel',
