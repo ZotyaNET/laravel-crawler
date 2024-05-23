@@ -2,9 +2,9 @@
 
 namespace PannonPuma\LaravelCrawler;
 
+use PannonPuma\LaravelCrawler\Console\Commands\LaravelCrawlerCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use PannonPuma\LaravelCrawler\Commands\LaravelCrawlerCommand;
 
 class LaravelCrawlerServiceProvider extends PackageServiceProvider
 {
