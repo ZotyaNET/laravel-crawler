@@ -20,7 +20,7 @@ We highly appreciate you sending us a postcard from your hometown, mentioning wh
 You can install the package via composer:
 
 ```bash
-composer require zotyanet/laravel-crawler
+composer require pannonpuma/laravel-crawler
 ```
 
 You can publish and run the migrations with:

@@ -1,12 +1,12 @@
 {
-    "name": "zotyanet/laravel-crawler",
-    "description": "This is my package laravel-crawler",
+    "name": "pannonpuma/laravel-crawler",
+    "description": ":package_description",
     "keywords": [
         "Zoltan Karpat",
         "laravel",
         "laravel-crawler"
     ],
-    "homepage": "https://github.com/zotyanet/laravel-crawler",
+    "homepage": "https://github.com/ZotyaNET/laravel-crawler",
     "license": "MIT",
     "authors": [
         {
