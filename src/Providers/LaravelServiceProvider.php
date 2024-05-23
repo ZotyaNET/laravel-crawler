@@ -1,9 +1,9 @@
 <?php
 
 /*
- * This file is part of the jiannei/laravel-crawler.
+ * This file is part of the pannonpuma/laravel-crawler.
  *
- * (c) jiannei <jiannei@sinan.fun>
+ * (c) Zoltan Karpat <karpat.zoltan@gmail.com>
  *
  * This source file is subject to the MIT license that is bundled
  * with this source code in the file LICENSE.
@@ -24,14 +24,14 @@ use PannonPuma\LaravelCrawler\Listeners\ResponseReceivedListener;
 
 class LaravelServiceProvider extends ServiceProvider
 {
-    public function register()
+    public function register(): void
     {
         $this->mergeConfigFrom(dirname(__DIR__, 2).'/config/crawler.php', 'crawler');
 
         $this->app['config']->set('logging.channels.crawler', $this->app['config']->get('crawler.log'));
     }
 
-    public function boot()
+    public function boot(): void
     {
         if ($this->app['config']->get('crawler.debug', false)) {
             $this->app['events']->listen(ConnectionFailed::class, ConnectionFailedListener::class);
@@ -50,7 +50,7 @@ class LaravelServiceProvider extends ServiceProvider
         }
     }
 
-    protected function setupPublishes()
+    protected function setupPublishes(): void
     {
         $this->publishes([
             dirname(__DIR__, 2).'/config/crawler.php' => config_path('crawler.php'),
