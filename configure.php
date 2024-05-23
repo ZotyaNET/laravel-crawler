@@ -304,7 +304,7 @@ foreach ($files as $file) {
         ':author_username' => $authorUsername,
         'author@domain.com' => $authorEmail,
         ':vendor_name' => $vendorName,
-        'zotyanet' => $vendorSlug,
+        'pannonpuma' => $vendorSlug,
         'VendorName' => $vendorNamespace,
         ':package_name' => $packageName,
         'laravel-crawler' => $packageSlug,
