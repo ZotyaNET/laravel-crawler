@@ -1,12 +1,12 @@
 {
-    "name": ":vendor_slug/:package_slug",
+    "name": "zotyanet/laravel-crawler",
     "description": ":package_description",
     "keywords": [
         ":vendor_name",
         "laravel",
-        ":package_slug"
+        "laravel-crawler"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/zotyanet/laravel-crawler",
     "license": "MIT",
     "authors": [
         {
