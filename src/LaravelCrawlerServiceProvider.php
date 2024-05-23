@@ -2,6 +2,9 @@
 
 namespace PannonPuma\LaravelCrawler;
 
+use PannonPuma\LaravelCrawler\Console\Commands\CrawlerRecord;
+use PannonPuma\LaravelCrawler\Console\Commands\CrawlerServer;
+use PannonPuma\LaravelCrawler\Console\Commands\CrawlerTask;
 use PannonPuma\LaravelCrawler\Console\Commands\LaravelCrawlerCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
@@ -20,6 +23,9 @@ class LaravelCrawlerServiceProvider extends PackageServiceProvider
             ->hasConfigFile()
             ->hasViews()
             ->hasMigration('create_laravel-crawler_table')
-            ->hasCommand(LaravelCrawlerCommand::class);
+            ->hasCommand(LaravelCrawlerCommand::class)
+            ->hasCommand(CrawlerTask::class)
+            ->hasCommand(CrawlerRecord::class)
+            ->hasCommand(CrawlerServer::class);
     }
 }
