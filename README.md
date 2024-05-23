@@ -1,24 +1,15 @@
-# :package_description
+# This is my package laravel-crawler
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/pannonpuma/laravel-crawler.svg?style=flat-square)](https://packagist.org/packages/pannonpuma/laravel-crawler)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/pannonpuma/laravel-crawler/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/pannonpuma/laravel-crawler/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/pannonpuma/laravel-crawler/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/pannonpuma/laravel-crawler/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/pannonpuma/laravel-crawler.svg?style=flat-square)](https://packagist.org/packages/pannonpuma/laravel-crawler)
-<!--delete-->
----
-This repo can be used to scaffold a Laravel package. Follow these steps to get started:
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/zotyanet/laravel-crawler.svg?style=flat-square)](https://packagist.org/packages/zotyanet/laravel-crawler)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/zotyanet/laravel-crawler/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/zotyanet/laravel-crawler/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/zotyanet/laravel-crawler/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/zotyanet/laravel-crawler/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/zotyanet/laravel-crawler.svg?style=flat-square)](https://packagist.org/packages/zotyanet/laravel-crawler)
 
-1. Press the "Use this template" button at the top of this repo to create a new repo with the contents of this skeleton.
-2. Run "php ./configure.php" to run a script that will replace all placeholders throughout all the files.
-3. Have fun creating your package.
-4. If you need help creating a package, consider picking up our <a href="https://laravelpackage.training">Laravel Package Training</a> video course.
----
-<!--/delete-->
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
 ## Support us
 
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/:package_name.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/:package_name)
+[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/laravel-crawler.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/laravel-crawler)
 
 We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
 
@@ -61,8 +52,8 @@ php artisan vendor:publish --tag="laravel-crawler-views"
 ## Usage
 
 ```php
-$variable = new VendorName\Skeleton();
-echo $variable->echoPhrase('Hello, VendorName!');
+$laravelCrawler = new PannonPuma\LaravelCrawler();
+echo $laravelCrawler->echoPhrase('Hello, PannonPuma!');
 ```
 
 ## Testing
@@ -85,7 +76,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [:author_name](https://github.com/:author_username)
+- [Zoltan Karpat](https://github.com/ZotyaNET)
 - [All Contributors](../../contributors)
 
 ## License
