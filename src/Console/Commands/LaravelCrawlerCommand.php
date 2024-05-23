@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 
 class LaravelCrawlerCommand extends Command
 {
-    public $signature = 'laravel-crawler';
+    public $signature = 'crawler:sync {-crawler=chrome}';
 
     public $description = 'My command';
 
