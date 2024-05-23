@@ -1,12 +1,12 @@
 {
-    "name": "zotyanet/laravel-crawler",
+    "name": "pannonpuma/laravel-crawler",
     "description": ":package_description",
     "keywords": [
         ":vendor_name",
         "laravel",
         "laravel-crawler"
     ],
-    "homepage": "https://github.com/zotyanet/laravel-crawler",
+    "homepage": "https://github.com/pannonpuma/laravel-crawler",
     "license": "MIT",
     "authors": [
         {

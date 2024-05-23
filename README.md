@@ -1,9 +1,9 @@
 # :package_description
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/zotyanet/laravel-crawler.svg?style=flat-square)](https://packagist.org/packages/zotyanet/laravel-crawler)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/zotyanet/laravel-crawler/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/zotyanet/laravel-crawler/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/zotyanet/laravel-crawler/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/zotyanet/laravel-crawler/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/zotyanet/laravel-crawler.svg?style=flat-square)](https://packagist.org/packages/zotyanet/laravel-crawler)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/pannonpuma/laravel-crawler.svg?style=flat-square)](https://packagist.org/packages/pannonpuma/laravel-crawler)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/pannonpuma/laravel-crawler/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/pannonpuma/laravel-crawler/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/pannonpuma/laravel-crawler/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/pannonpuma/laravel-crawler/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/pannonpuma/laravel-crawler.svg?style=flat-square)](https://packagist.org/packages/pannonpuma/laravel-crawler)
 <!--delete-->
 ---
 This repo can be used to scaffold a Laravel package. Follow these steps to get started:
@@ -29,7 +29,7 @@ We highly appreciate you sending us a postcard from your hometown, mentioning wh
 You can install the package via composer:
 
 ```bash
-composer require zotyanet/laravel-crawler
+composer require pannonpuma/laravel-crawler
 ```
 
 You can publish and run the migrations with:
