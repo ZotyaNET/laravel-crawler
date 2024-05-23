@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace PannonPuma\LaravelCrawler\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelCrawlerCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-crawler';
 
     public $description = 'My command';
 
