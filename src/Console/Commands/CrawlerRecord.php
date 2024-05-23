@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace PannonPuma\LaravelCrawler\Console;
+namespace PannonPuma\LaravelCrawler\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Builder;

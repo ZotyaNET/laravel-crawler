@@ -1,5 +1,6 @@
 {
     "name": "pannonpuma/laravel-crawler",
+    "version": "1.0.0",
     "description": ":package_description",
     "keywords": [
         "Zoltan Karpat",

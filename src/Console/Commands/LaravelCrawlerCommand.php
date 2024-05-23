@@ -1,6 +1,6 @@
 <?php
 
-namespace PannonPuma\LaravelCrawler\Commands;
+namespace PannonPuma\LaravelCrawler\Console\Commands;
 
 use Illuminate\Console\Command;
 

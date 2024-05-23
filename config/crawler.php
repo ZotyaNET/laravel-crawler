@@ -51,7 +51,7 @@ return [
 
     'chrome' => [
         'server' => [
-            'url' => 'http://localhost',
+            'url' => 'http://chrome',
             'port' => 4444,
         ],
         'arguments' => ['--headless', '--disable-gpu'], // https://chromedriver.chromium.org/capabilities
@@ -64,6 +64,12 @@ return [
             'level' => 'INFO', // set log level: ALL, DEBUG, INFO, WARNING, SEVERE, OFF
         ],
     ],
+
+    'stealth' => [],
+
+    'scrapy' => [],
+
+    'curl' => [],
 
     'rss' => [
         [
