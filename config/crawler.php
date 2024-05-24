@@ -84,12 +84,6 @@ return [
                 'search' => 'website/autoscout24-simple-search.cjs',
             ],
 
-    'stealth' => [],
-
-    'scrapy' => [],
-
-    'curl' => [],
-
         ],
     ],
     'scrapy' => [ // Python scrapy
