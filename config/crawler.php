@@ -100,7 +100,7 @@ return [
         ],
     ],
     'cli' => [ // Documentation
-        'path' => base_path('crawler/cli/url.md'),
+        'path' => base_path('crawler/cli'),
     ],
     'web' => [ // Php curl
         'https://hasznaltauto.info.hu/?url=',
