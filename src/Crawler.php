@@ -24,6 +24,7 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Str;
 use PannonPuma\LaravelCrawler\Models\CrawlTask;
 use Symfony\Component\DomCrawler\Crawler as SymfonyCrawler;
+use Symfony\Component\Process\ExecutableFinder;
 
 class Crawler extends SymfonyCrawler
 {
@@ -271,6 +272,25 @@ class Crawler extends SymfonyCrawler
         $driver->quit();
 
         return $this->new($html);
+    }
+
+    /**
+     * Remove Elements.
+     */
+    public function curl(string|array $urls): string|array
+    {
+        $executableFinder = new ExecutableFinder();
+
+        $curl = $executableFinder->find('bash');
+        $parallel = config('crawler.curl.parallel', 5);
+
+        $process = \Illuminate\Support\Facades\Process::run('/bin/bash -c "$(cat /var/www/html/crawler/cli/url.md)"');
+
+        if ($process->failed()) {
+            return 'Error: ' . $process->errorOutput();
+        } else {
+            return $process->output();
+        }
     }
 
     /**

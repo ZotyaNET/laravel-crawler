@@ -26,7 +26,8 @@ use Illuminate\Support\Facades\Facade as IlluminateFacade;
  * @method static array|Collection                json(string $key, array $query = [], array $options = [])
  * @method static Collection|int                  source(string $source = 'file',array $patterns = [])
  * @method static Collection                      rss(string $url, array $pattern = [])
- * @method static \PannonPuma\LaravelCrawler\Crawler chrome(string $url, WebDriverExpectedCondition $condition)
+ * @method static \PannonPuma\LaravelCrawler\Crawler chrome(string $url, WebDriverExpectedCondition $condition),
+ * @method static \PannonPuma\LaravelCrawler\Crawler curl(string $url)
  *
  * @see \PannonPuma\LaravelCrawler\Crawler
  */
